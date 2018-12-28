@@ -1,5 +1,5 @@
 # Simple Zend Example
-This is my example of doing a REST API with Zend 3 MVC without using Zend REST Client or Server. It contains the API for a property
+This is my example of doing a REST API with Zend 3 MVC. It contains the API for a property
 called "categories", and an Angular 7 app for interfacing the whole process.
 
 ## Installation

@@ -9,8 +9,9 @@ To do so:
 2.  If you want the hard way, just make sure you have Composer and Npm installed.
 
 ## Docker Compose
-1. <user> $ docker-compose up -d --build
-
+```
+$ docker-compose up -d --build
+```
 Generally, this process is a bit long (building images and yarn install thou...).
 
 With both images built and containers up and running,

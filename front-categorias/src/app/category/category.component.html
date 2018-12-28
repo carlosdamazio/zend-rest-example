@@ -1,0 +1,52 @@
+<div class="container" align="center">
+  <br>
+  <table class="table table-sm cat-table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let category of categories">
+        <th scope="row">{{ category.id }}</th>
+        <td>{{ category.name }}</td>
+        <td>
+          <button type="button" class="btn btn-info" style="margin: 10px;" (click)="open(content); selCat(category);">Edit</button>
+          <button type="button" class="btn btn-danger" (click)="delCat(category)">X</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br>
+
+  <label style="margin: 5px;">Category name:
+    <input #catName />
+  </label>
+  <button class="btn btn-info" (click)="addCat(catName.value); catName.value='' ">Add category</button>
+
+
+  <ng-template #content let-modal>
+    <div class="modal-header">
+      <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+      <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+    <div class="modal-body">
+      <form>
+        <div class="form-group">
+          <label>New name</label>
+          <div class="input-group">
+            <input #updateName />
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <button type="button" class="btn btn-outline-dark" (click)="upCat(updateName.value); updateName.value = ''; modal.close('Save click')">Save</button>
+    </div>
+  </ng-template>
+
+</div>

@@ -3,7 +3,7 @@ This is my example of doing a REST API with Zend 3 MVC without using Zend REST C
 called "categories", and an Angular 7 app for interfacing the whole process.
 
 ## Installation
-To run this project there are 2 options: using Docker Compose or running them stanalone.
+To run this project there are 2 options: using Docker Compose or running them standalone.
 To do so:
 1.  Make sure you have Docker and Docker Compose;
 2.  If you want the hard way, just make sure you have Composer and Npm installed.
